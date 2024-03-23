@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="payslip.css">
+
+</head>
+    <body>
+        <div class="wrapper">
+            <div class="form">
+                <h3 class="heading">PAY SLIP</h3>
+                <div class="empname inbox">
+                    <div class="label">EMPLOYEE NAME:</div>
+                    <input type="text" id="empname">
+                </div>
+                <div class="empid inbox">
+                    <div class="label">EMPLOYEE ID:</div>
+                    <input type="number" id="empid">
+                </div>
+                <div class="empdesig inbox">
+                    <div class="label">EMPLOYEE DESIGNATION:</div>
+                    <input type="text" id="empdesig">
+                </div>
+                
+                <div class="nameBox inbox">
+                    <div class="label">BASIC PAY</div>
+                    <input type="number" id="bp">
+                </div>
+                <div class="HraBox inbox">
+                    <div class="label">HRA</div>
+                    <input type="number" id="hra" disabled >
+                </div>
+                <div class="DaBox inbox">
+                    <div class="label">DA</div>
+                    <input type="number" id="da" disabled>
+                </div>
+                <div class="tvlBox inbox">
+                    <div class="label">TRAVEL</div>
+                    <input type="number" id="tvl" disabled>
+                </div>
+                <div class="pfBox inbox">
+                    <div class="label">PF</div>
+                    <input type="number" id="pf" disabled>
+                </div>
+                <div class="grossBox inbox">
+                    <div class="label">GROSS</div>
+                    <input type="number" id="gross" disabled>
+                </div>
+                <div class="ntslyBox inbox">
+                    <div class="label">NET SALARY</div>
+                    <input type="number" id="netsly" disabled>
+                </div>
+                <div class="inbox" style="text-align: center;">
+                    <input type="button" value="Print" id="print">
+                </div>
+            </div>
+            <div class="table" >
+                <table id="table" border="3">
+                    <thead>
+                        <tr>
+                            <th>EmpName</th>
+                            <th>EmpID</th>
+                            <th>EmpDesig</th>
+                            <th>BasicPay</th>
+                            <th>HRA</th>
+                            <th>DA</th>
+                            <th>Travel</th>
+                            <th>PF</th>
+                            <th>Gross</th>
+                            <th>Net Salary</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                       
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
